@@ -1,0 +1,255 @@
+<!--
+    function
+    ********
+        - particular "business logic" called as "function"
+
+        - functions are used to "reuse" the "business logic"
+
+        - we have following types of functions
+          ************************************
+
+          1) Named Functions
+
+          2) Anonymous Functions / Arrow Functions / CallBack Functions
+
+          3) Rest Parameters functions
+
+          4) Default Parameters in Functions
+
+          5) Optional Parameters in Functions
+
+                ---
+                ---
+                ---
+
+    Named Functions
+    ***************
+        The function with the particular name called as named function
+
+    Syntax
+    ++++++
+    1) function definition
+
+    2) function calling
+
+    function definition
+    *******************
+    function functionname(param1,param2,param3,.....paramn){
+        //business logic
+    }
+
+    function calling
+    ****************
+    functionname(arg1,arg2,arg3,.....argn)
+-->
+
+
+<!--
+<script>
+   function fun_one(){
+        return "welcome to named functions";
+   };
+
+   console.log( fun_one() );       //welcome to named functions
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(param1,param2,param3){
+        console.log( param1, param2, param3 );
+    }
+
+    fun_one("Angular14","NodeJS","MongoDB");                //Angular14 NodeJS MongoDB
+    fun_one("ReactJS","NodeJS","MongoDB");                  //ReactJS NodeJS MongoDB
+    fun_one("VueJS","NodeJS","MongoDB");                    //VueJS NodeJS MongoDB
+    fun_one();                                              //undefined undefined undefined
+    fun_one(undefined,"Hello_2");                           //undefined 'Hello_2' undefined
+    fun_one(null,null,null);                                //null null null
+</script>
+-->
+
+
+
+<!--
+<script>
+    function fun_one(){
+        return "welcome to named functions";
+    }
+
+    console.log( fun_one );             //function definition
+    console.log( fun_one() );           //welcome to named functions
+</script>
+-->
+
+<!--
+<script>
+    function fun_one(...param1){
+        console.log( param1 );
+    }
+    fun_one("Hello_1","Hello_2");               //['Hello_1', 'Hello_2']
+    fun_one(100);                               //[100]
+    fun_one();                                  //[]
+    fun_one(undefined,undefined);               //[undefined, undefined]
+    fun_one(null,null,undefined,undefined);     //[null, null, undefined, undefined]
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(...param1,...param2){}
+    //Uncaught SyntaxError: Rest parameter must be last formal parameter
+</script>
+-->
+
+<!-- 
+<script>
+    function fun_one(...param1,param2){}
+    //Uncaught SyntaxError: Rest parameter must be last formal parameter
+</script> 
+-->
+
+
+<!--
+<script>
+    function fun_one(param1,...param2){
+        console.log( param1, param2 );
+    };
+    fun_one();                              //undefined []
+    fun_one("Hello_1","Hello_2");           //Hello_1 ['Hello_2']
+    fun_one("Hello_1","Hello_2","Hello_3"); //Hello_1  ['Hello_2', 'Hello_3']
+    fun_one(undefined,undefined);           //undefined [undefined]
+    fun_one(undefined,undefined,undefined); //undefined  [undefined, undefined]
+    fun_one(null,null);                     //null [null]
+</script>
+-->
+
+
+<!--
+<script>
+    function fun_one(param1="Hello_1",param2="Hello_2",param3="Hello_3"){
+        console.log( param1, param2, param3 );
+    }
+    fun_one();                                      //Hello_1 Hello_2 Hello_3
+    fun_one("Welcome_1","Welcome_2","Welcome_3");   //Welcome_1 Welcome_2 Welcome_3
+    fun_one(undefined,undefined,undefined);         //Hello_1 Hello_2 Hello_3
+    fun_one(null,null,null);                        //null null null
+</script>
+-->
+
+<script>
+    function fun_one(param1,param2="Hello_2",...param3){
+        console.log( param1, param2, param3 );
+    }
+    fun_one();                                   //undefined 'Hello_2' []
+    fun_one("Hello_1");                          //Hello_1 Hello_2 []
+    fun_one("Hello_1",undefined,"Hello_3");      //Hello_1 Hello_2 ['Hello_3']
+    fun_one(undefined,undefined,undefined);      //undefined 'Hello_2' [undefined]
+    fun_one(null,null,null);                     //null null [null]
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
