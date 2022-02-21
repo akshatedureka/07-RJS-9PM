@@ -105,39 +105,253 @@
     console.log( arr1 );                //[ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ]
 */
 
-//findIndex()
-let arr = [10,20,30,40,50,60,70,80,90,100];
+/*
+    //findIndex()
+    let arr = [10,20,30,40,50,60,70,80,90,100];
 
-console.log(
-    arr.findIndex((element,index)=>{
+    console.log(
+        arr.findIndex((element,index)=>{
+            return element == 50;
+        })
+    );          //4
+
+
+    console.log(
+        arr.findIndex((element,index)=>{
+            return element == 80;
+        })
+    );      //7
+
+
+    console.log(
+        arr.findIndex((element,index)=>{
+            return element == 1000;
+        })
+    );          //-1
+
+    arr.splice(arr.findIndex((element,index)=>{
         return element == 50;
-    })
-);          //4
+    }),1);
+    console.log( arr );
+
+
+    arr.splice( arr.findIndex((element,index)=>{
+        return element == 90;
+    }), 1);
+    console.log( arr );
+*/
+
+
+/*
+    console.log(
+        [1,2,3,4,5].map((element,index)=>{
+            return element*100;
+        })
+    );
+    //[ 100, 200, 300, 400, 500 ]
 
 
 console.log(
-    arr.findIndex((element,index)=>{
-        return element == 80;
+    [100,200,300,400,500].map((element,index)=>{
+        return element/10;
     })
-);      //7
+);      //[ 10, 20, 30, 40, 50 ]
+
 
 
 console.log(
-    arr.findIndex((element,index)=>{
-        return element == 1000;
+    [1,2,3,4,5].map((element,index)=>{
+        return element == 1 || element == 5 ? "Hello" : "welcome"
     })
-);          //-1
+);
 
-arr.splice(arr.findIndex((element,index)=>{
-    return element == 50;
-}),1);
-console.log( arr );
+//[ 'Hello', 'welcome', 'welcome', 'welcome', 'Hello' ]
+*/
 
 
-arr.splice( arr.findIndex((element,index)=>{
-    return element == 90;
-}), 1);
-console.log( arr );
+/*
+    console.log(
+        [100,200,300,400,500].filter((element,index)=>{
+            return element>=300;
+        })
+    );          
+    //[ 300, 400, 500 ]
+
+
+
+console.log(
+    [1,2,3,4,5].map((element,index)=>{
+        return element*100;
+    }).filter((element,index)=>{
+        return element<=200;
+    })
+);
+//[ 100, 200 ]
+*/
+
+
+/*
+console.log(
+    [1,2,3,4,5].reduce((firstElement,nextElement)=>{
+        return firstElement + nextElement;
+    })
+);
+//15
+
+
+
+console.log(
+    [1,2,3,4,5].map((element,index)=>{
+        return element*100;
+    }).filter((element,index)=>{
+        return element<=300;
+    }).reduce((firstElement,nextElement)=>{
+        return firstElement+nextElement;
+    },5000)
+);
+//5600
+*/
+
+
+
+let arr = [10,20,30,40,50];
+console.log( arr.reverse() );
+//[ 50, 40, 30, 20, 10 ]
+
+
+
+console.log( "hello".split("").reverse().join("") );                //olleh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
