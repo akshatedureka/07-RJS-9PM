@@ -212,15 +212,152 @@ console.log(
 //5600
 */
 
+/*
+    //reverse()
+    //reverse() function used to reverse the array elements
+    let arr1 = [10,20,30,40,50];
+    console.log( arr1.reverse() );  
+    //[ 50, 40, 30, 20, 10 ]
 
 
-let arr = [10,20,30,40,50];
-console.log( arr.reverse() );
-//[ 50, 40, 30, 20, 10 ]
+    let arr2 = ["Angular14","ReactJS","NodeJS","VueJS","MongoDB"];
+    console.log( arr2.reverse() );
+    //[ 'MongoDB', 'VueJS', 'NodeJS', 'ReactJS', 'Angular14' ]
+
+
+    console.log(
+        "Hello".split("").reverse().join("")
+    );
+
+    //[ 'H', 'e', 'l', 'l', 'o' ]
+    //[ 'o', 'l', 'l', 'e', 'H' ]
+    //olleH
+*/
 
 
 
-console.log( "hello".split("").reverse().join("") );                //olleh
+/*
+let arr1 = ["Angular14","ReactJS","NodeJS","VueJS","MongoDB"];
+//["41ralugnA","SJtcaeR","SJedoN","SJeuV","BDognoM"]
+console.log(
+    arr1.map((element,index)=>{
+        return element.split("").reverse().join("")
+    })
+);
+console.log(
+    arr1.map((element,index)=>{
+        return element === "NodeJS" ? element.split("").reverse().join("") : element
+    })
+);
+*/
+
+
+/*
+    //...
+    //spread operator
+    let arr1 = ["Angular14"];
+    let arr2 = ["NodeJS"];
+    let arr3 = ["MongoDB"];
+    let arr4 = [...arr1,...arr2,...arr3];
+    console.log(arr4);      //[ 'Angular14', 'NodeJS', 'MongoDB' ]
+
+
+
+
+    let father = ["1cr"];
+    let child = [...father,"1kg gold"];
+    let grand_child = [...child,"1kg silver"];
+    console.log( grand_child );     //[ '1cr', '1kg gold', '1kg silver' ]            
+*/
+
+
+
+
+let arr = [10,20,30,10,20,30];
+//indexOf()
+//it won't create indexes to repeated elements
+
+// arr.forEach((element,index)=>{
+//     console.log( arr.indexOf(element) );
+// })
+
+console.log(
+    arr.filter((element,index)=>{
+        return arr.indexOf(element) === index;
+    })
+);      //[ 10, 20, 30 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
