@@ -1,0 +1,298 @@
+<!--
+    JSON
+    ****
+        JSON Stands for "JavaScript Object Notation"
+
+        JSON also called as "JavaScript Objects"
+
+        JSON used to "transfer" the "data" over the "Network"
+
+        JSON is "light weight".
+
+        Syntax.
+
+        Objects  ---  {}
+
+        Arrays   ---  []
+
+        data     ---  key & value pairs
+                      
+                      key & value separated by using ":"
+
+                      key & value pairs separated by using ","
+-->
+
+<!--
+<script>
+    let obj = {
+        "sub_one" : "ReactJS",
+        "sub_two" : "NodeJS",
+        "sub_three" : "MongoDB"
+    }; 
+    console.log( obj.sub_one, obj.sub_two, obj.sub_three );
+    //ReactJS NodeJS MongoDB
+</script>
+-->
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };  
+    //for....in  loop
+    for(let key in obj){
+        //console.log(key);
+        //console.log( obj[key] );
+        console.log( typeof key );
+    }
+</script>
+-->
+
+
+
+<!--
+<script>
+    let obj = {
+        "key1" : "Hello_1",
+        "key2" : "Hello_2",
+        "key3" : "Hello_3"
+    };
+
+    //delete
+    delete obj.key1;
+    console.log( obj );             //{key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+
+
+<!--
+<script>
+    // ... (spread operator)
+    //ES6
+    //concatnation
+    //immutability
+    let obj1 = {"key1" : "Hello_1"};
+    let obj2 = {"key2" : "Hello_2"};
+    let obj3 = {"key3" : "Hello_3"};
+    let obj4 = {...obj1,...obj2,...obj3};
+    console.log( obj4 );
+    //{key1: 'Hello_1', key2: 'Hello_2', key3: 'Hello_3'}
+</script>
+-->
+
+<!--
+<script>
+    let obj1 = {"key1" : "100rs"};
+    let obj2 = {...obj1, "key2":"50rs"};
+    console.log( obj2 );                            //{key1: '100rs', key2: '50rs'}
+</script>
+-->
+
+
+<!--
+<script>
+    let grand_father = {"property1":"1cr"};
+    let father = {...grand_father,"property2":"1 kg gold"};
+    let child = {...father,"property3":"new house"};
+    console.log(child);                         //{property1: '1cr', property2: '1 kg gold', property3: 'new house'}
+</script>
+-->
+
+
+<!--
+<script>
+    let arr = [
+        {"name":"shirt1","cost":"$100.00","brand":"Niki","image":"https://redux-bucket.s3.amazonaws.com/shirt1.jpg"},
+        {"name":"shirt2","cost":"$200.00","brand":"Polo","image":"https://redux-bucket.s3.amazonaws.com/shirt2.jpg"},
+        {"name":"shirt3","cost":"$300.00","brand":"American","image":"https://redux-bucket.s3.amazonaws.com/shirt3.jpg"},
+        {"name":"pant1","cost":"$400.00","brand":"Niki","image":"https://redux-bucket.s3.amazonaws.com/pant1.jpg"},
+        {"name":"pant2","cost":"$500.00","brand":"Polo","image":"https://redux-bucket.s3.amazonaws.com/pant2.jpg"},
+        {"name":"pant3","cost":"$600.00","brand":"American","image":"https://redux-bucket.s3.amazonaws.com/pant3.jpg"}
+    ];
+    document.write(`<table border="1"
+                           cellpadding="10px"
+                           cellspacing="10px"
+                           align="center">
+                        <tr>
+                            <th>SNO</th>
+                            <th>NAME</th>
+                            <th>COST</th>
+                            <th>BRAND</th>
+                            <th>IMAGE</th>
+                        </tr>`);
+    arr.forEach((element,index)=>{
+        document.write(`<tr>
+                <td>${index+1}</td>
+                <td>${element.name}</td>
+                <td>${element.cost}</td>
+                <td>${element.brand}</td>
+                <td><img src=${element.image} width="50px"></td>
+            </tr>`);
+    });
+    document.write(`</table>`);
+</script>
+-->
+<!--
+    JSON Server
+    ***********
+        JSON Server used to develop the " Rest API'S "
+        Ex.
+            GET
+            POST
+            PUT
+            DELETE
+        JSON Server supports only "JSON Data"
+
+        JSON Server by default running on Port No.3000
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
