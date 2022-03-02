@@ -1,0 +1,348 @@
+Syllabus
+********
+
+1) Introduction to TypeScript
+
+2) Variables
+
+3) Functions
+
+4) OOPS
+
+	Classes & Objects
+
+	Encapsulation
+
+	Inheritance
+
+	Polymorphism
+
+	Abstraction
+
+	---
+	---
+	---
+
+5) Modules in TypeScript
+
+
+6) Namespaces in TypeScript
+
+
+7) Generics
+
+
+8) Enum
+
+Introduction to TypeScript
+**************************
+	TypeScript is the "Programming" Language
+
+	TypeScript Released by "Microsoft"
+
+	Superset of JavaScript also called as "TypeScript"
+
+	Adv JavaScript and tools also called as "TypeScript"
+	
+	TypeScript follows the "OOPS".
+
+	TypeScript used to build the React Applications,Angular, NodeJS and VueJS Applications
+
+	extension of TypeScript files is ".ts"
+
+	Browsers "wont" understands the TypeScript.
+
+	Browsers able to understand HTML,CSS,JavaScript.
+
+	So, as a React Developer we must convert TypeScript to Equalent JavaScript
+
+	Conversion of TypeScript to Equalent JavaScript Called as Transpilation
+
+	"tsc" is the tool used to perform "Transpilation"
+
+	tsc stands for "TypeScript Compiler"
+
+	Visual Studio Code IDE is Suggestable IDE to build the both TypeScript and React Applications
+	
+	VSCode IDE Released By Microsoft and Open Source IDE
+
+	TypeScript installation is "command based Installation"
+
+	TypeScript Installation depending on npm tool
+
+	npm stands for node packaging manager
+
+	npm present in NodeJS
+
+Day-2
+*****
+
+Installation of Softwares
+
+1) download and install "NodeJS"
+
+	NodeJS, containes following tools
+
+		=> npm
+
+		=> node
+
+		=> npx
+
+	npm stands for node packaging manager
+
+	npm helps to install the TypeScript
+
+	node tool helps to execute the "JavaScript"
+	
+	npx stands for "node packaging runner"
+
+	npx helps to create the environment to develop react applications
+
+website : https://nodejs.org/en/download/
+
+file    : node-v16.14.0-x64.msi
+
+
+2) install TypeScript
+
+	TypeScript installation is command based installation
+
+
+	> npm install -g typescript
+
+	where -g stands for global installation
+
+
+
+3) download and install Visual Studio Code
+
+		VScode is the IDE, provided my microsoft and open source IDE
+
+		VSCode IDE Recomended to develop both TypeScript and React Applications
+
+
+website : https://code.visualstudio.com/docs/?dv=win
+
+file    : VSCodeUserSetup-x64-1.64.2.exe
+
+
+Transpilation
+*************
+	conversion of typescript code to equalent javascript code called as transpilation
+
+	tsc is the tool, used to perform the transpilation
+
+Ex.
+
+		> tsc demo.ts
+
+			o/p
+
+		demo.js
+
+		> node demo.js
+
+
+Variables
+*********
+		Variables are used to store the "data"
+		Ex.
+				string
+
+				number
+
+				boolean
+
+				arrays
+
+				Objects
+
+				---
+				---
+				---
+		we will declare the Variables with var/let/const keyword
+
+		let & const keywords introduced in "ES6"
+
+		Variables declaration should contain 
+
+			a-z
+
+			A-Z
+
+			0-9
+
+			$
+
+			and 
+
+			_
+
+		Variables declaration should not start with "digits"
+
+
+Syntax
+******
+
+var/let/const variablename:datatype = value;
+
+Ex.
+
+var msg:string = "welcome to ashokit";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
