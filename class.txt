@@ -161,7 +161,7 @@ Variables
 				---
 				---
 				---
-		we will declare the Variables with var/let/const keyword
+		we will "declare" the Variables with var/let/const keyword
 
 		let & const keywords introduced in "ES6"
 
@@ -181,7 +181,6 @@ Variables
 
 		Variables declaration should not start with "digits"
 
-
 Syntax
 ******
 
@@ -189,8 +188,8 @@ var/let/const variablename:datatype = value;
 
 Ex.
 
-var msg:string = "welcome to ashokit";
-
+var msg:string = "welcome to reactjs"
+console.log( msg );
 
 
 
