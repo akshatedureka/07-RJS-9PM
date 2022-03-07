@@ -35,13 +35,16 @@
 */
 
 
-//1) declare variable
-//2) initilize the variable
-//3) access the variable
-console.log(data);              //var:undefined
-let data = 100;                 //let:ReferenceError: Cannot access 'data' before initialization
-//"variable hoisting" issue raised because of var keyword
-//we can overcome "variable hoisting" by using let keyword
+/*
+    //1) declare variable
+    //2) initilize the variable
+    //3) access the variable
+    console.log(data);              //var:undefined
+    let data = 100;                 //let:ReferenceError: Cannot access 'data' before initialization
+    //"variable hoisting" issue raised because of var keyword
+    //we can overcome "variable hoisting" by using let keyword
+*/
+
 
 
 /*
@@ -65,12 +68,85 @@ let data = 100;                 //let:ReferenceError: Cannot access 'data' befor
 */
 
 
+//const
+//const is the "keyword"
+//const keyword introduced in "ES6"
+//const keyword used to "declare" the variables
+//"reinitilization" not possible with const keyword
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    const data = 100;
+    data = 200;
+*/
+
+
+/*
+    const arr = [10,20,30,40,50];
+    //arr = [];                                   //TypeError: Assignment to constant variable.
+    arr[0] = 100;
+    arr[4] = 500;
+    console.log( arr );                             //[ 100, 20, 30, 40, 500 ]
+*/
+
+
+
+const obj = {
+    "sub_one" : "ReactJS",
+    "sub_two" : "NodeJS",
+    "sub_three" : "MongoDB"
+};
+//obj = {};               //TypeError: Assignment to constant variable.
+obj.sub_one = "ReactJS 18.x"
+console.log( obj );         //{ sub_one: 'ReactJS 18.x', sub_two: 'NodeJS', sub_three: 'MongoDB' }
 
 
 
