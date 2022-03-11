@@ -256,6 +256,95 @@
 //hybrid inheritance not supported by typescript
 
 
+//polymorphism
+//behaves like many called as polymorphism
+//1) function overloading
+//2) function overriding
+
+
+/*
+    //function overloading
+    class class_one{
+        fun_one(param1:number,param2:number):void;
+
+        fun_one(param1:string,param2:string):void;
+
+        fun_one(param1:any,param2:any):void{
+            return param1+param2;
+        }
+    }
+    let obj1:class_one = new class_one();
+    console.log( obj1.fun_one(10,10) );                 //20
+    console.log( obj1.fun_one("Hello_1","Hello_2"));    //Hello_1Hello_2
+*/
+
+//function overriding
+//*******************
+//overriding the parent class functionality with child class functionality called as function overriding
+class Parent{
+    dbFun():string{
+        return "data from oracle db soon";
+    }
+}
+class Child extends Parent{
+    dbFun(): string {
+        return "mongodb data soon";
+    }
+}
+
+let obj:Child = new Child();
+console.log( obj.dbFun() );                     //mongodb data soon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

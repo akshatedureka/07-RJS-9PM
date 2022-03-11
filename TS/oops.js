@@ -200,47 +200,94 @@ var __extends = (this && this.__extends) || (function () {
 
     //Typescript won't supports multiple inheritance
 */
-//Hirarichal Inheritance
+/*
+    //Hirarichal Inheritance
+    class Parent{
+        var_one:string = "Hello_1";
+    };
+
+
+    class Child1 extends Parent{
+        var_two:string = "Hello_2";
+    };
+
+    class Child2 extends Parent{
+        var_two:string = "Hello_3";
+    };
+
+    class Child3 extends Parent{
+        var_two:string = "Hello_4";
+    };
+
+
+    let c1:Child1 = new Child1();
+    console.log( c1.var_one, c1.var_two );                  //Hello_1 Hello_2
+
+
+    let c2:Child2 = new Child2();
+    console.log( c2.var_one, c2.var_two );                  //Hello_1 Hello_3
+
+
+    let c3:Child3 = new Child3();
+    console.log( c3.var_one, c3.var_two );                  //Hello_1 Hello_4
+*/
+/*
+    class Class_1{
+
+    }
+
+    class Class_2 extends Class_1{
+
+    }
+
+    class Class_3 extends Class_1{
+
+    }
+
+    class Class_4 extends Class_2,Class_3{
+
+    }
+*/
+//hybrid inheritance not supported by typescript
+//polymorphism
+//behaves like many called as polymorphism
+//1) function overloading
+//2) function overriding
+/*
+    //function overloading
+    class class_one{
+        fun_one(param1:number,param2:number):void;
+
+        fun_one(param1:string,param2:string):void;
+
+        fun_one(param1:any,param2:any):void{
+            return param1+param2;
+        }
+    }
+    let obj1:class_one = new class_one();
+    console.log( obj1.fun_one(10,10) );                 //20
+    console.log( obj1.fun_one("Hello_1","Hello_2"));    //Hello_1Hello_2
+*/
+//function overriding
+//*******************
+//overriding the parent class functionality with child class functionality called as function overriding
 var Parent = /** @class */ (function () {
     function Parent() {
-        this.var_one = "Hello_1";
     }
+    Parent.prototype.dbFun = function () {
+        return "data from oracle db soon";
+    };
     return Parent;
 }());
-;
-var Child1 = /** @class */ (function (_super) {
-    __extends(Child1, _super);
-    function Child1() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.var_two = "Hello_2";
-        return _this;
+var Child = /** @class */ (function (_super) {
+    __extends(Child, _super);
+    function Child() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    return Child1;
+    Child.prototype.dbFun = function () {
+        return "mongodb data soon";
+    };
+    return Child;
 }(Parent));
-;
-var Child2 = /** @class */ (function (_super) {
-    __extends(Child2, _super);
-    function Child2() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.var_two = "Hello_3";
-        return _this;
-    }
-    return Child2;
-}(Parent));
-;
-var Child3 = /** @class */ (function (_super) {
-    __extends(Child3, _super);
-    function Child3() {
-        var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.var_two = "Hello_4";
-        return _this;
-    }
-    return Child3;
-}(Parent));
-;
-var c1 = new Child1();
-console.log(c1.var_one, c1.var_two);
-var c2 = new Child2();
-console.log(c2.var_one, c2.var_two);
-var c3 = new Child3();
-console.log(c3.var_one, c3.var_two);
+var obj = new Child();
+console.log(obj.dbFun());
