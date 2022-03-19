@@ -195,6 +195,559 @@ console.log( msg );
 
 
 
+1) Introduction to ReactJS
+
+2) Installation of ReactJS
+
+3) First React Application Setup	
+
+4) Directory Structure of React Application
+
+5) Components in ReactJS
+
+	=> Functional Components
+
+	=> Class Level Components
+
+6) Communication Between Components
+
+		Parent to Child
+
+			=> props
+
+			=> state
+
+		Child to Parent
+
+			=> events
+
+7) State Management
+
+	=> Redux
+	
+	=> Thunk
+
+	=> Saga
+
+
+8) AJAX Calls /  Asynchronous Calls
+
+		=> axios library
+
+		=> fetch()   Facebook
+
+		=> Rest API'S Calls
+
+				GET
+
+				POST
+
+				PUT
+
+				DELETE
+
+				HEAD
+
+				---
+				---
+				---
+
+		=> Spring Boot Integration with ReactJS
+
+
+9) Single Page Applications
+
+		Routing
+
+		Protected Routing
+
+
+10) Forms with Validations
+		
+		(Formic & yup)
+
+
+11) MERN Stack Development
+
+	M - MongoDB
+
+	E - ExpressJS
+
+	R - ReactJS
+
+	N - NodeJS
+
+
+12) Hooks
+
+	=> Functional Components Hooks
+
+	=> Class Level Components Hooks
+
+
+13) Authentication
+
+		JWT 
+
+		JSON Web Token Authentication
+
+
+14) Ecommerce Application
+
+
+15) Cloud Hosting
+
+		Heroku Deployment
+
+		AWS Deployment
+
+
+16) Unit test cases
+
+
+Introduction to ReactJS
+***********************
+
+	- ReactJS is a library
+
+	- ReactJS is the JavaScript library
+
+	- React Relaesed by Facebook
+
+	- React Categorized into 3 types
+
+			1) ReactJS
+			
+			2) React Native
+
+			3) React BootStrap
+
+	- ReactJS used to build the web applications
+
+	- we will build web applications in two ways
+
+			1) JSX
+
+			2) TSX
+
+	- JSX Stands for JavaScript and XML
+
+	- TSX Stands for TypeScript and XML
+
+	- Current version of ReactJS is 18.X
+
+	- React Native used to build the mobile applications
+
+	- React BootStrap used to apply Rich UI to Both web applications and mobile applications
+
+	- Visual Studio Code IDE is Suggestable IDE to build the React Applications
+
+	- Visual Studio Code Released by microsoft and Open Source IDE
+
+	- in general, browsers can't understand XML
+
+	- so, we must convert XML to Equalent JavaScript
+
+	- Babel is the tool, used to convert XML to Equalent JavaScript
+
+	- Babel is the inbuilt tool of ReactJS
+
+	- ReactJS Installation depending on npm tool
+
+	- npm stands for node packaging manager
+
+	- npm present in NodeJS
+
+	- yarn is the tool, provided by facebook
+
+	- yarn tool, used to download the 3rd party libraries
+
+Software Installations
+**********************
+
+1) download and install NodeJS
+
+	nodejs containes following tools
+
+		1) npm
+
+		2) node
+
+		3) npx
+
+	npm stands for node packaging manager
+
+	npm helps to install the react,angular,vuejs,.....
+
+	node tool, helps to execute the javascript
+
+	npx stands for node packaging runner
+
+	npx creates the environment to build the react applications
+
+
+website : https://nodejs.org/en/download/
+
+file    : node-v16.14.1-x64.msi
+
+
+
+2) install yarn tool
+
+	yarn tool, provided by facebook
+
+	yarn tool, used to download the "3rd party" libraries
+
+	yarn tool, installation is command based installation
+
+	> npm install -g yarn
+
+	"-g" stands for global installation
+
+
+3) install create-react-app tool
+
+		create-react-app is the tool
+
+		this tool released by facebook
+
+		this tool, used to create the react applications
+
+		this tool, installation also command based installation
+
+		> npm install -g create-react-app
+
+
+4) install Visual Studio Code
+
+	website : https://code.visualstudio.com/docs/?dv=win
+
+	file    : VSCodeUserSetup-x64-1.65.2.exe
+
+
+Create and execute react Application
+************************************
+
+1) create the react application with following command
+
+	> npx create-react-app first-app
+
+		where "first-app" is the name of the react application
+
+
+2) switch to react application
+
+	> cd first-app
+
+3) execute the react application
+
+	> yarn start
+
+		Default port number of React Application is 3000
+
+
+Directory Structure
+*******************
+1) node_modules
+
+		it containes libraries
+
+		these libraries helps to execute the react application
+
+
+2) public/favicon.ico
+
+	this is the Default logo of react application
+
+
+3) public/index.html
+
+	react library starts the execution from index.html file
+
+	index html file called as main tempalte
+
+	index.html file containes the div whose id as root
+
+	in future we will render component to div
+
+
+4) public/logo192.png
+          logo512.png
+
+	these logos helps to implement the responsive web design
+
+
+5) public/manifest.json
+
+	used to implement the mobile applications
+
+	helps to develop the progressive web apps
+
+6) public/robots.txt
+
+	used to include the Google SEO Words
+
+	SEO Stands for Search Engine Optimization
+
+
+7) src
+
+		this folder behaves like source folder
+
+		this folder used to deploy the react components
+
+
+8) src/App.js
+	   App.css
+	   App.test.js
+
+		These files are representing the default component files
+
+		unit testing files end with ".test.js" extension
+
+9) src/index.css
+
+	this file used to define the global styles
+
+	these styles applicable to entire react application
+
+
+10) src/index.js
+
+	this file acting as registration file
+
+	this file handover our component to div whose id as root (present in index.html file)
+
+	we should register our components in index.js file
+
+
+11) src/logo.svg
+
+	this is the default svg logo of reactjs
+
+
+12) src/setupTests.js
+
+	this file acting as library file
+
+	this library file helps to write the unit test cases to react applications
+
+
+13) package.json
+
+	this file containes libraries information
+
+	this file heps to download the 3rd party libraries to develop react applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
