@@ -540,6 +540,89 @@ Directory Structure
 	this file heps to download the 3rd party libraries to develop react applications
 
 
+Components
+**********
+	Reusable Portion of Complex UI Called as Component
+
+	We can create more than one component
+
+	we can provide Communication between Components
+
+	React applications are Components based
+
+	Because of Components, Code Reusability incresed in React Application
+
+	Because of Components, Debugging of React Applications are Eazy
+
+	we have two types of Components
+
+	1) functional level components
+
+	2) class level components
+
+
+steps to create the functional level component
+**********************************************
+
+1) create the react application
+
+		> npx create-react-app component-app
+
+				where "component-app" is the name of the react application
+
+
+2) create the component
+
+		*****************************************
+		component-app
+		            src
+					  First.js
+
+					  index.js
+
+					public
+						index.html
+		****************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
