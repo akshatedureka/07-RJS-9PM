@@ -585,6 +585,14 @@ steps to create the functional level component
 		****************************************
 
 
+state
+*****
+	state used to represent the "component" data
+
+	"useState()" is the hook, used to represent "state" of a component
+
+
+
 
 
 
