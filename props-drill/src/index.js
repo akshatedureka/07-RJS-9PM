@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import StateEx1 from "./StateEx1";
-import StateEx2 from "./StateEx2";
-import StateEx3 from "./StateEx3";
+import Parent from "./Parent";
+import Comp1 from "./Comp1";
 ReactDOM.render(
   <React.StrictMode>
-    <StateEx3 />
+    <Comp1 />
   </React.StrictMode>,
   document.getElementById('root')
 );
