@@ -593,6 +593,40 @@ state
 
 
 
+NodeJS
+******
+	NodeJS is the backend technology
+
+	NodeJS applications we will develop with the help of javascript
+
+	NodeJS Supports the libraries/modules.
+
+1) express
+
+	express library used to develop the rest apis
+
+		Ex.
+				GET
+				POST
+				PUT
+				DELETE
+				--
+				--
+				--
+				--
+
+2) cors
+
+	cors library used to enable the ports Communication
+
+	
+	we will download above libraries with "yarn" tool
+
+	above libraries downloads to "node_modules" folder in Current path
+	
+
+
+
 
 
 
