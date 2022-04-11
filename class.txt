@@ -626,6 +626,136 @@ NodeJS
 	
 
 
+MERN Stack Development
+**********************
+
+M - MongoDB
+
+
+E - ExpressJS
+
+
+R - ReactJS
+
+
+N - NodeJS
+
+
+MongoDB
+*******
+
+	MongoDB is the "NoSQL" database.
+
+	MongoDB database is "JSON" Based database.
+
+	MongoDB database is light weight database
+
+	MongoDB database follows mongodb protocol
+
+	The default port no of MongoDB database is "27017"
+
+	MongoDB database provides the "cloud" environment in the form of a "MongoDB Atlas" Account
+
+					SQL												NoSQL
+	***************************************************************************************************************
+
+	Ex.
+			Oracle											MongoDB
+			MySQL											CassandraDB
+			SQLServer
+
+
+			tables											collections
+
+			databases										databases
+
+			records											document
+
+			primary key										_id
+	*****************************************************************************************************************
+
+
+Link : https://www.mongodb.com/cloud/atlas/register1
+
+
+database name : 07reactjs
+
+table         : login_details
+
+url : mongodb+srv://admin:admin@07reactjs.i39e5.mongodb.net/07reactjs?retryWrites=true&w=majority
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
