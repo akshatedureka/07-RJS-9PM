@@ -648,9 +648,9 @@ MongoDB
 
 	MongoDB database is "JSON" Based database.
 
-	MongoDB database is light weight database
+	MongoDB database is "light weight" database
 
-	MongoDB database follows mongodb protocol
+	MongoDB database follows "mongodb" protocol
 
 	The default port no of MongoDB database is "27017"
 
@@ -683,6 +683,102 @@ database name : 07reactjs
 table         : login_details
 
 url : mongodb+srv://admin:admin@07reactjs.i39e5.mongodb.net/07reactjs?retryWrites=true&w=majority
+
+
+
+NodeJS
+******
+	- NodeJS is the backend technology
+
+	- NodeJS used to develop the "server side" applications
+
+	- we will develop NodeJS Applications with the help of "JavaScript".
+
+	- NodeJS Supports the libraries
+
+libraries
+*********
+
+1) mongodb
+
+	mongodb library used to connect to "mongodb" database
+
+
+2) express
+
+	express library used to develop the "rest api's"
+
+	Ex.
+			GET
+			POST
+			PUT
+			DELETE
+			---
+			---
+			---
+
+
+3) cors
+
+	cors library used to enable the Communication between ports
+
+
+we will download above libraries with the help of yarn tool
+
+1) create the backend directory
+
+	Ex.
+		backend
+
+2) switch to backend directory
+
+	> cd backend
+
+
+3) download libraries
+
+		yarn add express mongodb cors
+
+4) implement the server
+
+	server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
