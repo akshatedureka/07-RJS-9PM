@@ -33,6 +33,87 @@ code {
 
 
 
+#root{
+  height: 100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-template-rows: 3rem 1fr 3rem;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+header{
+  grid-area: "header";
+}
+main{
+  grid-area: "main";
+}
+footer{
+  grid-area: "footer";
+  background-color: #203040;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #203040;
+  align-items: center;
+  color: white;
+}
+
+.logo{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+.logo:hover,i:hover{
+  color: #f0c040;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
