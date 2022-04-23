@@ -82,6 +82,38 @@ i{
   color: #f0c040;
 }
 
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center{
+  justify-content: center;
+}
+
+.card{
+  border: 0.1rem solid #c0c0c0;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 0.2rem;
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-body>*{
+  margin-bottom: 0.5rem;
+}
+
+img.medium {
+  max-width: 18rem;
+  width: 100%;
+}
+
 
 
 

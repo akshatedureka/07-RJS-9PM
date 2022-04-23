@@ -745,6 +745,89 @@ we will download above libraries with the help of yarn tool
 
 
 
+Cloud Deployment
+****************
+1) install aws cli tool
+
+	aws cli tool, used to move our application to aws server
+
+	website : https://aws.amazon.com/cli/
+
+	file    : AWSCLIV2.msi
+
+
+2) prepare production build
+
+		> npm run build
+
+	if production build success, automatically "build" folder is ready
+
+
+3) push build folder files to s3 bucket
+
+		static website Hosting
+
+		bucket policies
+
+
+4) create the security keys to our application
+
+		IAM
+
+5) modify package.json file
+
+	"deploy": "aws s3 cp --recursive ./build s3://frontproject"
+
+6) run the following commands
+
+		> aws configure
+
+		> npm run build
+
+		> npm run deploy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

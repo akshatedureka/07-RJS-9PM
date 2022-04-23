@@ -32,7 +32,9 @@ function App() {
         </header>
 
         <main>
-          {!loading?<Loading></Loading>:error=="Network Error"?<MessageBox>{error}</MessageBox>:<Display products={products}></Display>}
+          {!loading?<Loading></Loading>:
+           error=="Network Error"?<MessageBox>{error}</MessageBox>:
+           <Display products={products}></Display>}
 
         </main>
 
