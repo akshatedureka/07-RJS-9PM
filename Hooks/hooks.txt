@@ -1,0 +1,22 @@
+1) useState()        ---- Completed
+
+2) useEffect()
+
+3) useRef()
+
+4) createConext()      ---- Completed
+
+5) useContext()       ----- Completed
+
+6) useSelector()      ----- Completed
+
+7) useReducer()       ----- Completed
+
+8) lazy               ----- Completed
+
+9) Suspense           ----- Completed
+
+10) useMemo()         ----- Completed
+
+11) useCallback()
+
