@@ -1,6 +1,7 @@
 import React from "react";
-import {ErrorMessage, Field} from "formik";
-import TextEror from "./TextError";
+import {Field,ErrorMessage} from "formik";
+import TextError from "./TextError";
+
 function Select(props){
     const {label,name,options,...rest} = props;
     return(
@@ -8,11 +9,13 @@ function Select(props){
             <div className="form-control">
                 <label htmlFor={name}>{label}</label>
                 <Field as="select" name={name} id={name} {...rest}>
-                    {options.map((obj)=>{
-                        return <option key={obj.key}>{obj.key}</option>
+                    {options.map(option=>{
+                        return (<option key={option.key} value={option.value}>
+                                {option.key}
+                        </option>)
                     })}
                 </Field>
-                <ErrorMessage name={name} component={TextEror}></ErrorMessage>
+                <ErrorMessage name={name} component={TextError}></ErrorMessage>
             </div>
         </React.Fragment>
     )
