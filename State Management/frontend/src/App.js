@@ -21,7 +21,7 @@ function App() {
     <div className="grid-container">
         <header className="my_header">
            <div className="logo">
-              MiniProject
+              Align
            </div>
 
            <div>
@@ -39,7 +39,7 @@ function App() {
         </main>
 
         <footer>
-          copyright@miniproject.com
+          copyright@align.com
         </footer>
         
     </div>
